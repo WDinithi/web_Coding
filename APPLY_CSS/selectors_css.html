@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /*!*Type Selector*!
+        h1{
+            color: red;
+        }
+
+        p{
+            background-color: yellowgreen;
+        }*/
+
+        /*!*id selector*!
+        #dini{
+            color: yellow;
+        }*/
+/*
+        .dini{
+            color: red;
+        }
+        .style2{
+            font-weight: bold;
+        }*/
+
+       /* !*universal selector*!
+       *{
+           color: red;
+
+        }*/
+
+       /* attribute selector*/
+   /*     [name]{
+            color: red;
+        }
+        [name=js]{
+            font-weight: bold;
+        }
+        [href]{
+            color: deeppink;
+        }
+        [href="http://google.com"]{
+            color: darkred;
+        }
+        [href^="https"]{
+            background-color: blueviolet;
+        }
+        [href^="http"]{
+            background-color: yellow;
+        }
+        [href $=".lk"]{
+            color: black;
+        }
+        [href *="https"]{
+            background-color:darkgoldenrod ;
+        }*/
+/*
+        [href ~="student3"]{
+            background-color:yellow ;
+        }
+        li[name="google"]{
+            background-color: darkmagenta;
+        }
+
+*/
+
+       /* .mystyle[name]{
+            background-color: yellow;
+        }*/
+
+       /* h1:hover{
+            color: red;
+            cursor: pointer;
+        }
+
+
+        h1:active{
+            color: darkmagenta;
+        }*/
+
+       /* a:visited{
+            color: green;
+        }
+
+        a:link{
+            color: lightpink;
+        }*/
+
+      /*  input:focus{
+            background-color: darkblue;
+        }*/
+
+     /*   li:first-child{
+            font-weight: bold;
+        }
+
+        li:last-child{
+            color: red;
+        }
+
+        li:nth-child(3){
+            color: purple;
+        }
+
+        li:nth-child(4){
+            color: chocolate;
+        }
+
+        h3:first-child{
+            font-weight: bold;
+            color: red;
+        }
+        h3:last-child{
+
+            color: darkblue;
+        }*/
+
+        h1::before{
+            content:"🥰 ";
+        }
+
+        h1::after{
+            content:"🙌";
+        }
+
+        h3::first-letter{
+            color: green;
+        }
+
+        p::first-line{
+            color: mediumvioletred;
+        }
+        input::placeholder{
+            color: darkblue;
+        }
+
+        input::file-selector-button{
+            background-color: chartreuse;
+        }
+        ::selection{
+            background-color: chartreuse;
+            color: white;
+        }
+
+        ::marker{
+            content: "✨";
+        }
+
+        input::file-selector-button{
+            background-color: lightpink;
+        }
+        /*input::file-selector-button::*/
+
+        h1,h2,h3, h4, #subtopic1, .mystyle{
+            color: #ec5156;
+        }
+    </style>
+</head>
+<body>
+
+
+<h1 ><!--class="dini"--><!--id="dini"-->Internet Technologies</h1>
+
+<section>
+    <h4>IJSE 1</h4>
+    <h4>IJSE 2</h4>
+    <h4>IJSE 3</h4>
+    <h4>IJSE 4</h4>
+    <h4>IJSE 5</h4>
+
+</section>
+<a href="http://google.com" name="google">google</a>
+<a href="https://youtube.com">youtube</a>
+<a href="https://ijse.com">ijse</a>
+<a href="http://ijsestudent.comhttps">ijsestudent</a>
+<a href="http://ijse student .lk">ijse student 2</a>
+
+<h3>Content</h3>
+<ol>
+    <li name="google">HTML</li>
+    <li>
+        CSS
+        <ol>
+            <li>Introduction to CSS</li>
+            <li>History of CSS</li>
+            <li>CSS Rule</li>
+            <li>CSS Selectors</li>
+            <li>Other CSS Topics...</li>
+        </ol>
+    </li>
+    <li>JS</li>
+</ol>
+
+<section name="html">
+    <h3 class="mystyle" name=" html" ><!--class="dini"-->HTML</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis debitis explicabo fugiat ipsum iste non, perferendis praesentium recusandae vero. Adipisci corporis dolores est ex fuga tempore voluptatem voluptates voluptatibus.
+    </p>
+</section>
+
+<section name="js">
+    <h3>CSS</h3>
+    <p ><!--class="style2"-->
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis debitis explicabo fugiat ipsum iste non, perferendis praesentium recusandae vero. Adipisci corporis dolores est ex fuga tempore voluptatem voluptates voluptatibus.
+    </p>
+</section>
+
+<section>
+    <h3>JS</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis debitis explicabo fugiat ipsum iste non, perferendis praesentium recusandae vero. Adipisci corporis dolores est ex fuga tempore voluptatem voluptates voluptatibus.
+    </p>
+</section>
+
+
+<form action="">
+    <label for="fname">First Name</label>
+    <input type="text" name="fname" id="fname" placeholder="Input first name"><br>
+
+    <label for="sname">Second Name</label>
+    <input type="text" name="sname" id="sname" placeholder="Input second name"><br>
+
+    <label for="email">email</label>
+    <input type="email" name="email" id="email" placeholder="input email"> <br>
+
+    <label for="Massage">Massage</label>
+    <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Input massage"></textarea>
+    <br>
+
+    <input type="file">
+
+    <br>
+    <button name="Submut" value="submit" > Submit</button>
+    <button name="reset" value="reset">resert</button>
+
+
+
+</form>
+</body>
+</html>
